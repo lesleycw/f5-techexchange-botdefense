@@ -1,18 +1,14 @@
-Lab 1: Deploying F5 Distributed Cloud Proxy Services to Securely Deliver a Public Endpoint
-==========================================================================================
+Lab: Deploying F5 Distributed Cloud Bot Defense
+===============================================
 
-This lab will focus on the deployment and security of an existing hosted application using F5
-Distributed Cloud Platform and Services.  This lab will be deployed in a SaaS only
-configuration with no on-premises (public or private cloud) elements.  All configuration
-will be made via the F5 Distributed Cloud Console and within the F5 Distributed Cloud Global
-Network services architecture.
+This lab will focus on the deployment and security of F5 Distributed Cloud Bot Defense via a BIG-IP 
+Bot Defense Connector.  Deployment steps will be within the F5 Distributed Cloud Console and TMUI on
+the BIG-IP.
 
 **Task 1 – Define the protected application in F5 Distributed Cloud Bot Defense**
 
 1. Login to the F5 Distributed Cloud tenant at
    `https://f5-xc-lab-sec.console.ves.volterra.io <https://f5-xc-lab-sec.console.ves.volterra.io/>`__.
-
-..
 
    *The UDF deployment associated with this lab guide creates an
    ephemeral account and namespace for you in a F5 Distributed Cloud
