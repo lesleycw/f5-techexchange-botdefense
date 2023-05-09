@@ -300,83 +300,83 @@ Review the information available on this page. Be sure to scroll down to see all
 | |labend|                                                                                                      |
 +---------------------------------------------------------------------------------------------------------------+
 
-.. |lab001| image:: images/media/image1.png
+.. |lab001| image:: _static/image1.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab002| image:: images/media/image2.png
+.. |lab002| image:: _static/image2.png
    :width: 5.65675in
    :height: 4.27822in
 
-.. |lab003| image:: images/media/image3.png
+.. |lab003| image:: _static/image3.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab004| image:: images/media/image4.png
+.. |lab004| image:: _static/image4.png
    :width: 5.65675in
    :height: 4.27822in
 
-.. |lab005| image:: images/media/image5.png
+.. |lab005| image:: _static/image5.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab006| image:: images/media/image6.png
+.. |lab006| image:: _static/image6.png
    :width: 5.65675in
    :height: 4.27822in
 
-.. |lab007| image:: images/media/image7.png
+.. |lab007| image:: _static/image7.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab008| image:: images/media/image8.png
+.. |lab008| image:: _static/image8.png
    :width: 5.65675in
    :height: 4.27822in
 
-.. |lab009| image:: images/media/image9.png
+.. |lab009| image:: _static/image9.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab010| image:: images/media/image10.png
+.. |lab010| image:: _static/image10.png
    :width: 5.65675in
    :height: 4.27822in
 
-.. |lab011| image:: images/media/image11.png
+.. |lab011| image:: _static/image11.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab012| image:: images/media/image12.png
+.. |lab012| image:: _static/image12.png
    :width: 5.65675in
    :height: 4.27822in
 
-.. |lab013| image:: images/media/image13.png
+.. |lab013| image:: _static/image13.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab014| image:: images/media/image14.png
+.. |lab014| image:: _static/image14.png
    :width: 5.65675in
    :height: 4.27822in
 
-.. |lab015| image:: images/media/image15.png
+.. |lab015| image:: _static/image15.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab016| image:: images/media/image16.png
+.. |lab016| image:: _static/image16.png
    :width: 5.65675in
    :height: 4.27822in
 
-.. |lab017| image:: images/media/image17.png
+.. |lab017| image:: _static/image17.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab018| image:: images/media/image18.png
+.. |lab018| image:: _static/image18.png
    :width: 5.65675in
    :height: 4.27822in
 
-.. |lab019| image:: images/media/image19.png
+.. |lab019| image:: _static/image19.png
    :width: 3.68925in
    :height: 3.37788in
 
-.. |lab020| image:: images/media/image20.png
+.. |lab020| image:: _static/image20.png
    :width: 5.65675in
    :height: 4.27822in
 
@@ -393,5 +393,5 @@ Review the information available on this page. Be sure to scroll down to see all
 
 
 
-.. |labend| image:: _static/labend.png
+.. |labend| image:: _static//labend.png
    :width: 800px
