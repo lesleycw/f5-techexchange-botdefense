@@ -5,7 +5,8 @@ This lab will focus on the deployment and security of F5 Distributed Cloud Bot D
 Bot Defense Connector.  Deployment steps will be within the F5 Distributed Cloud Console and TMUI on
 the BIG-IP.
 
-**Task 1 – Define the protected application in F5 Distributed Cloud Bot Defense**
+**Task 1: Define the protected application in F5 Distributed Cloud Bot Defense**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Login to the F5 Distributed Cloud tenant at
    `https://f5-xc-lab-sec.console.ves.volterra.io <https://f5-xc-lab-sec.console.ves.volterra.io/>`__.
@@ -15,18 +16,15 @@ the BIG-IP.
       *you in a F5 Distributed Cloud tenant. Shortly after launching this UDF deployment, you will receive*
       *an email requesting you to update/reset your password in this new ephemeral account. Please complete*
       *the password reset before continuing in this lab.*
-
    |lab001|
 
    .. note:: 
       *Example F5 Distributed Cloud ephemeral account Password Reset email.*
 
 2. From the Home page select the Bot Defense tile.
-
    |lab002|
 
 3. From the left-hand menu select **Manage >> Applications**. Then select the “\ **Add Protected Application**\ ” button.
-
    |lab003|
 
 4. On the Protected Application screen do the following:
@@ -38,33 +36,28 @@ the BIG-IP.
    c. Select “Custom” for the **Connector Type**.
 
    d. Click **Save and Exit**.
-
-   |lab004|
+      |lab004|
 
 5. This will return you to the **Overview** screen.
 
 From the left-hand menu select **Manage >> Applications** again. Click the ellipsis icon on the right of your newly defined
 application. Here you will find the ability to copy various values that are needed to configure the BIGIP connector.
+|lab005|
 
-   |lab005|
-
-**Task 2 – Configure BIGIP Distributed Cloud Bot Defense Profile**
+**Task 2: Configure BIGIP Distributed Cloud Bot Defense Profile**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Access the Web App in your UDF deployment.
-
    |lab006|
 
 2. Take note of the FQDN. You will need this when configuring the Bot Defense profile on the BIGIP.
-
    |lab007|
 
 3. Access the TMUI of your BIGIP 17.1. You can find the credentials to login in the Details page.
-
    |lab008|
 
 4. In the F5 BIGIP TMUI, browse to **Distributed Cloud Services >> Bot Defense >> BD Profiles** and
    click the (+) icon to create a new Bot Defense profile.
-
    |lab009|
 
 5. On the **New BD Profile…** screen edit the following settings:
@@ -109,7 +102,6 @@ application. Here you will find the ability to copy various values that are need
 
       v.  Repeat steps i-iv above using **botdefense.udf.f5.com** in the **Host** field
 
-
    |A screenshot of a computer Description automatically generated with
    medium confidence|\ **NOTE:** *Ensure that both* **Hosts** *are
    listed in the* **Protected URIs** *section, as pictured above.*
@@ -128,7 +120,6 @@ application. Here you will find the ability to copy various values that are need
    j. From the **SSL Profile** dropdown select the **serverssl** profile.
 
    k. Choose **X-Forwarded-For** from the **Source of Client IP Address** dropdown.
-
       |lab012|
 
    l. Click **Finished**.
@@ -137,7 +128,6 @@ The F5 Distributed Cloud Bot Defense connector profile is now configured. Howeve
 the BD profile to the virtual server.
 
 6. From the F5 BIGIP TMUI, browse to **Local Traffic >> Virtual Servers**. Select the **app-virtual** virtual server.
-
    |lab013|
 
    a. Select the **Distributed Cloud Services** tab at the top and then do the following:
@@ -147,8 +137,7 @@ the BD profile to the virtual server.
    c. From the **Profile** dropdown, select the BD profile created in the previous step.
 
    d. Click **Update**.
-
-   |lab014|
+     |lab014|
 
 7. Clear all existing connections on the F5 BIGIP.
 
@@ -162,10 +151,10 @@ the BD profile to the virtual server.
          *Clearing the connections is necessary to ensure that all requests to the virtual server are using the*
          *new configuration with the XC Bot Defense profile attached.*
 
-**Task 3 – Test Bots**
+**Task 3: Test Bots**
+~~~~~~~~~~~~~~~~~~~~~~
 
 1. Connect to the Bot server in your UDF deployment using the Web Shell access method:
-
    |lab015|
 
 2. Change to the */home/ubuntu/bots* directory and list the contents:
@@ -173,15 +162,12 @@ the BD profile to the virtual server.
    a. cd /home/ubuntu/bots
 
    b. ls
-
-   |lab016|
+      |lab016|
 
    There are 3 types of Bots available for this Lab and a README file where you can find detailed information
    on how to make them work if you are interested in using them elsewhere.
 
-3. Change to the **advanced** directory.
-
-   a. cd advanced
+3. Change to the **advanced** directory using the command  **cd advanced**
 
    In the **advanced** directory is a bot created using NodeJS and the Puppeteer browser automation tool.
 
@@ -190,7 +176,6 @@ the BD profile to the virtual server.
    1st step of this lab instructions.
 
 4. Run the **advanced** Bot by issuing the following command: *node bot_multiple.js*
-
    |lab017|
 
    .. note:: 
@@ -212,7 +197,6 @@ the BD profile to the virtual server.
          *(This will activate the python Virtual Environment)*
 
    c. Run the command: python bot_medium.py
-
       |lab018|
 
       .. note:: 
@@ -264,7 +248,6 @@ the BD profile to the virtual server.
    |lab021|
 
 3. From the right-hand menu, select **Report > Traffic Analyzer**.
-
    |lab022|
 
    .. note:: 
@@ -273,7 +256,6 @@ the BD profile to the virtual server.
 4. Add a filter to filter out the requests for the client JS.
 
    a. Select Add Filter
-
       |lab023|
 
    b. Choose **Traffic Type**
@@ -283,15 +265,12 @@ the BD profile to the virtual server.
    d. Select **Others**
 
    e. Click **Apply**
-
       |lab024|
 
 5. From the right-hand menu, select **Report > Bad Bot Report**.
-
    |lab025|
 
 Review the information available on this page. Be sure to scroll down to see all graphs and data available.
-
 |lab011|
 
 +---------------------------------------------------------------------------------------------------------------+
