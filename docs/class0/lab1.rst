@@ -16,15 +16,18 @@ the BIG-IP.
       *you in a F5 Distributed Cloud tenant. Shortly after launching this UDF deployment, you will receive*
       *an email requesting you to update/reset your password in this new ephemeral account. Please complete*
       *the password reset before continuing in this lab.*
+
    |lab001|
 
    .. note:: 
       *Example F5 Distributed Cloud ephemeral account Password Reset email.*
 
 2. From the Home page select the Bot Defense tile.
+
    |lab002|
 
 3. From the left-hand menu select **Manage >> Applications**. Then select the “\ **Add Protected Application**\ ” button.
+
    |lab003|
 
 4. On the Protected Application screen do the following:
@@ -36,28 +39,34 @@ the BIG-IP.
    c. Select “Custom” for the **Connector Type**.
 
    d. Click **Save and Exit**.
+
       |lab004|
 
 5. This will return you to the **Overview** screen.
 
-From the left-hand menu select **Manage >> Applications** again. Click the ellipsis icon on the right of your newly defined
-application. Here you will find the ability to copy various values that are needed to configure the BIGIP connector.
-|lab005|
+   From the left-hand menu select **Manage >> Applications** again. Click the ellipsis icon on the right of your newly defined
+   application. Here you will find the ability to copy various values that are needed to configure the BIGIP connector.
+
+   |lab005|
 
 **Task 2: Configure BIGIP Distributed Cloud Bot Defense Profile**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Access the Web App in your UDF deployment.
+
    |lab006|
 
 2. Take note of the FQDN. You will need this when configuring the Bot Defense profile on the BIGIP.
+
    |lab007|
 
 3. Access the TMUI of your BIGIP 17.1. You can find the credentials to login in the Details page.
+
    |lab008|
 
 4. In the F5 BIGIP TMUI, browse to **Distributed Cloud Services >> Bot Defense >> BD Profiles** and
    click the (+) icon to create a new Bot Defense profile.
+
    |lab009|
 
 5. On the **New BD Profile…** screen edit the following settings:
@@ -119,6 +128,7 @@ application. Here you will find the ability to copy various values that are need
    j. From the **SSL Profile** dropdown select the **serverssl** profile.
 
    k. Choose **X-Forwarded-For** from the **Source of Client IP Address** dropdown.
+
       |lab012|
 
    l. Click **Finished**.
@@ -127,6 +137,7 @@ The F5 Distributed Cloud Bot Defense connector profile is now configured. Howeve
 the BD profile to the virtual server.
 
 6. From the F5 BIGIP TMUI, browse to **Local Traffic >> Virtual Servers**. Select the **app-virtual** virtual server.
+
    |lab013|
 
    a. Select the **Distributed Cloud Services** tab at the top and then do the following:
@@ -136,15 +147,14 @@ the BD profile to the virtual server.
    c. From the **Profile** dropdown, select the BD profile created in the previous step.
 
    d. Click **Update**.
-     |lab014|
+
+      |lab014|
 
 7. Clear all existing connections on the F5 BIGIP.
 
    a. Return to the UDF course tab in your browser and connect to the BIGIP using the Web Shell access method.
 
-   b. Run the following command:
-
-      **tmsh delete sys conn**
+   b. Run the following command: **tmsh delete sys conn**
 
       .. note:: 
          *Clearing the connections is necessary to ensure that all requests to the virtual server are using the*
@@ -154,6 +164,7 @@ the BD profile to the virtual server.
 ~~~~~~~~~~~~~~~~~~~~~~
 
 1. Connect to the Bot server in your UDF deployment using the Web Shell access method:
+
    |lab015|
 
 2. Change to the */home/ubuntu/bots* directory and list the contents:
@@ -161,10 +172,11 @@ the BD profile to the virtual server.
    a. cd /home/ubuntu/bots
 
    b. ls
+
       |lab016|
 
-   There are 3 types of Bots available for this Lab and a README file where you can find detailed information
-   on how to make them work if you are interested in using them elsewhere.
+      There are 3 types of Bots available for this Lab and a README file where you can find detailed information
+      on how to make them work if you are interested in using them elsewhere.
 
 3. Change to the **advanced** directory using the command  **cd advanced**
 
@@ -175,6 +187,7 @@ the BD profile to the virtual server.
    1st step of this lab instructions.
 
 4. Run the **advanced** Bot by issuing the following command: *node bot_multiple.js*
+
    |lab017|
 
    .. note:: 
@@ -196,6 +209,7 @@ the BD profile to the virtual server.
          *(This will activate the python Virtual Environment)*
 
    c. Run the command: python bot_medium.py
+
       |lab018|
 
       .. note:: 
@@ -231,7 +245,7 @@ the BD profile to the virtual server.
 9. **OPTIONAL:** Return to the BIGIP TMUI and change the configuration for the two Protected URIs to
     enable Blocking. Then re-run steps 3 through 8 above.
 
-**Task 4 – Review F5 Distributed Cloud Bot Defense Dashboard**
+**Task 4: Review F5 Distributed Cloud Bot Defense Dashboard**
 
 1. Return to the F5 Distributed Cloud Console. You may be required to re-authenticate if you have not been on this page for a while.
 
@@ -247,6 +261,7 @@ the BD profile to the virtual server.
    |lab021|
 
 3. From the right-hand menu, select **Report > Traffic Analyzer**.
+
    |lab022|
 
    .. note:: 
@@ -255,6 +270,7 @@ the BD profile to the virtual server.
 4. Add a filter to filter out the requests for the client JS.
 
    a. Select Add Filter
+
       |lab023|
 
    b. Choose **Traffic Type**
@@ -264,12 +280,15 @@ the BD profile to the virtual server.
    d. Select **Others**
 
    e. Click **Apply**
+
       |lab024|
 
 5. From the right-hand menu, select **Report > Bad Bot Report**.
+
    |lab025|
 
 Review the information available on this page. Be sure to scroll down to see all graphs and data available.
+
 |lab011|
 
 +---------------------------------------------------------------------------------------------------------------+
@@ -279,84 +298,82 @@ Review the information available on this page. Be sure to scroll down to see all
 +---------------------------------------------------------------------------------------------------------------+
 
 .. |lab001| image:: _static/image1.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab002| image:: _static/image2.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
 
 .. |lab003| image:: _static/image3.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab004| image:: _static/image4.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
 
 .. |lab005| image:: _static/image5.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab006| image:: _static/image6.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
 
 .. |lab007| image:: _static/image7.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab008| image:: _static/image8.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
 
 .. |lab009| image:: _static/image9.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab010| image:: _static/image10.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
 
 .. |lab011| image:: _static/image11.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab012| image:: _static/image12.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
 
 .. |lab013| image:: _static/image13.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab014| image:: _static/image14.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
 
 .. |lab015| image:: _static/image15.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab016| image:: _static/image16.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
 
 .. |lab017| image:: _static/image17.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab018| image:: _static/image18.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
 
 .. |lab019| image:: _static/image19.png
-   :width: 3.68925in
-   :height: 3.37788in
+   :width: 800px
 
 .. |lab020| image:: _static/image20.png
-   :width: 5.65675in
-   :height: 4.27822in
+   :width: 800px
+
+.. |lab021| image:: _static/image21.png
+   :width: 800px
+
+.. |lab022| image:: _static/image22.png
+   :width: 800px
+
+.. |lab023| image:: _static/image23.png
+   :width: 800px
+
+.. |lab024| image:: _static/image24.png
+   :width: 800px
+
+.. |lab025| image:: _static/image25.png
+   :width: 800px
+
+.. |lab026| image:: _static/image26.png
+   :width: 800px
 
 
 
