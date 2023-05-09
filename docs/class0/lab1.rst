@@ -102,14 +102,13 @@ application. Here you will find the ability to copy various values that are need
 
       v.  Repeat steps i-iv above using **botdefense.udf.f5.com** in the **Host** field
 
-   |A screenshot of a computer Description automatically generated with
-   medium confidence|\ **NOTE:** *Ensure that both* **Hosts** *are
-   listed in the* **Protected URIs** *section, as pictured above.*
+          .. note:: 
+             *Ensure that both **Hosts** are listed in the **Protected URIs** section, as pictured above.*
 
-  .. note:: 
-     *The ephemeral hostname is needed to match requests that originate from outside the UDF environment.* 
-     *The botdefense.access.udf.com hostname is needed to match requests that originate from inside the*
-     *UDF environment (as the ephemeral hostnames are not accessible from inside UDF).*
+      .. note:: 
+         *The ephemeral hostname is needed to match requests that originate from outside the UDF environment.* 
+         *The botdefense.access.udf.com hostname is needed to match requests that originate from inside the*
+         *UDF environment (as the ephemeral hostnames are not accessible from inside UDF).*
 
    **Advanced Features**
 
