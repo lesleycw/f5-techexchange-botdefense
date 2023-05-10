@@ -167,16 +167,12 @@ the BD profile to the virtual server.
 
    |lab015|
 
-2. Change to the */home/ubuntu/bots* directory and list the contents:
+2. Change to the */home/ubuntu/bots* directory and list the contents using the commands **cd /home/ubuntu/bots** and then **ls**
 
-   a. cd /home/ubuntu/bots
+   |lab016|
 
-   b. ls
-
-      |lab016|
-
-      There are 3 types of Bots available for this Lab and a README file where you can find detailed information
-      on how to make them work if you are interested in using them elsewhere.
+   There are 3 types of Bots available for this Lab and a README file where you can find detailed information
+   on how to make them work if you are interested in using them elsewhere.
 
 3. Change to the **advanced** directory using the command  **cd advanced**
 
@@ -287,9 +283,9 @@ the BD profile to the virtual server.
 
    |lab025|
 
-Review the information available on this page. Be sure to scroll down to see all graphs and data available.
+6. Review the information available on this page. Be sure to scroll down to see all graphs and data available.
 
-|lab011|
+   |lab011|
 
 +---------------------------------------------------------------------------------------------------------------+
 | **End of Lab:**  This concludes the Lab.                                                                      |
@@ -325,7 +321,7 @@ Review the information available on this page. Be sure to scroll down to see all
    :width: 800px
 
 .. |lab010| image:: _static/image10.png
-   :width: 800px
+   :width: 580px
 
 .. |lab011| image:: _static/image11.png
    :width: 800px
@@ -337,19 +333,19 @@ Review the information available on this page. Be sure to scroll down to see all
    :width: 800px
 
 .. |lab014| image:: _static/image14.png
-   :width: 800px
+   :width: 695px
 
 .. |lab015| image:: _static/image15.png
    :width: 800px
 
 .. |lab016| image:: _static/image16.png
-   :width: 800px
+   :width: 436px
 
 .. |lab017| image:: _static/image17.png
-   :width: 800px
+   :width: 584px
 
 .. |lab018| image:: _static/image18.png
-   :width: 800px
+   :width: 639px
 
 .. |lab019| image:: _static/image19.png
    :width: 800px
@@ -371,22 +367,6 @@ Review the information available on this page. Be sure to scroll down to see all
 
 .. |lab025| image:: _static/image25.png
    :width: 800px
-
-.. |lab026| image:: _static/image26.png
-   :width: 800px
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.. |labend| image:: _static//labend.png
+   
+.. |labend| image:: _static/labend.png
    :width: 800px
