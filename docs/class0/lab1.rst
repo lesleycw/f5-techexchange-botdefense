@@ -65,7 +65,7 @@ the BIG-IP.
    |lab008|
 
 4. In the F5 BIGIP TMUI, browse to **Distributed Cloud Services >> Bot Defense >> BD Profiles** and
-   click the (+) icon to create a new Bot Defense profile.
+   click the **(+)** icon to create a new Bot Defense profile.
 
    |lab009|
 
@@ -98,7 +98,7 @@ the BIG-IP.
       i. In the **Host** field paste in the FQDN from the Web App Access Method for your BIGIP.
 
          .. note::
-            *(See Exercise 2 step 2 above. The FQDN for your Web App will be similar to 3995dde2-4cf8-4c5b-89f2-2d0717d76d5b.access.udf.f5.com.)*
+            *See Exercise 2 step 2 above. The FQDN for your Web App will be similar to 3995dde2-4cf8-4c5b-89f2-2d0717d76d5b.access.udf.f5.com.*
 
       ii.  Enter /**login/** into the **Path** field.
 
@@ -112,12 +112,12 @@ the BIG-IP.
       v.  Repeat steps i-iv above using **botdefense.udf.f5.com** in the **Host** field
 
           .. note:: 
-             *Ensure that both **Hosts** are listed in the **Protected URIs** section, as pictured above.*
+             *Ensure that both* **Hosts** *are listed in the* **Protected URIs** *section, as pictured above.*
 
-      .. note:: 
-         *The ephemeral hostname is needed to match requests that originate from outside the UDF environment.* 
-         *The botdefense.access.udf.com hostname is needed to match requests that originate from inside the*
-         *UDF environment (as the ephemeral hostnames are not accessible from inside UDF).*
+          .. note:: 
+             *The ephemeral hostname is needed to match requests that originate from outside the UDF environment.* 
+             *The botdefense.access.udf.com hostname is needed to match requests that originate from inside the*
+             *UDF environment (as the ephemeral hostnames are not accessible from inside UDF).*
 
    **Advanced Features**
 
@@ -202,7 +202,7 @@ the BD profile to the virtual server.
    b. Run the command: source .venv/bin/activate
 
       .. note:: 
-         *(This will activate the python Virtual Environment)*
+         *This will activate the python Virtual Environment*
 
    c. Run the command: python bot_medium.py
 
@@ -223,12 +223,12 @@ the BD profile to the virtual server.
    b. Run the command: deactivate
 
       .. note:: 
-         *(this will deactivate the previous python Virtual Environment)*
+         *This will deactivate the previous python Virtual Environment*
 
    c. Run the command: source .venv/bin/activate
 
       .. note:: 
-         *(this will activate the current python Virtual Environment)*
+         *This will activate the current python Virtual Environment*
 
    d. Run the command: ./curl_shape_token_missing.sh 10 botdefense.udf.f5.com. You should get the following output:
 
@@ -367,6 +367,6 @@ the BD profile to the virtual server.
 
 .. |lab025| image:: _static/image25.png
    :width: 800px
-   
+
 .. |labend| image:: _static/labend.png
    :width: 800px
