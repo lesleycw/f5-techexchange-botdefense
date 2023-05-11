@@ -179,8 +179,7 @@ the BD profile to the virtual server.
    In the **advanced** directory is a bot created using NodeJS and the Puppeteer browser automation tool.
 
    This Bot loads a Headless Chrome browser on stealth mode and attempts to log in using the credentials provided
-   in the credentials/cred.txt file. Please open the credentials file and include the users you created during the
-   1st step of this lab instructions.
+   in the credentials/cred.txt file. 
 
 4. Run the **advanced** Bot by issuing the following command: *node bot_multiple.js*
 
@@ -192,8 +191,7 @@ the BD profile to the virtual server.
 5. In the **medium** directory will you find a Bot created using Python and Selenium browser automation tool.
 
    This Bot loads a Headless Chrome browser and attempts to log in using the credentials provided in the usernames.txt
-   and passwords.txt files. Please open these files and include the users you created during the 1st step of this lab
-   instructions.
+   and passwords.txt files. 
 
 6. Run the **medium** Bot by following the instructions below:
 
