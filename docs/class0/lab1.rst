@@ -281,7 +281,7 @@ the BD profile to the virtual server.
 
       |lab024|
 
-5. From the right-hand menu, select **Report > Bad Bot Report**.
+5. From the left-hand menu, select **Report > Bad Bot Report**.
 
    |lab025|
 
