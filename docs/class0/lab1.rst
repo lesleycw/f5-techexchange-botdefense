@@ -248,7 +248,7 @@ the BD profile to the virtual server.
    If you have already closed this browser tab you can login at `https://f5-xc-lab-sec.console.ves.volterra.io <https://f5-xc-lab-sec.console.ves.volterra.io/>`__
    and select the Bot Defense tile.
 
-2. From the right-hand menu, select **Overview > Monitor** and change the time range to **Last 1 hour**.
+2. From the left-hand menu, select **Overview > Monitor** and change the time range to **Last 1 hour**.
    Review the information on the **Monitor** dashboard.
 
    .. note:: 
@@ -256,7 +256,7 @@ the BD profile to the virtual server.
 
    |lab021|
 
-3. From the right-hand menu, select **Report > Traffic Analyzer**.
+3. From the left-hand menu, select **Report > Traffic Analyzer**.
 
    |lab022|
 
