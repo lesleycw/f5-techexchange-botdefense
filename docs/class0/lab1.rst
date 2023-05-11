@@ -236,6 +236,8 @@ the BD profile to the virtual server.
 
       |lab020|
 
+   f. Run 'deactivate'  
+
 9. **OPTIONAL**: Return to the BIGIP TMUI and change the configuration for the two Protected URIs to enable Blocking. Then re-run steps 3 through 8 above.
 
 **Task 4: Review F5 Distributed Cloud Bot Defense Dashboard**
