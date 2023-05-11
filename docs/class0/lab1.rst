@@ -111,6 +111,8 @@ the BIG-IP.
 
       v.  Repeat steps i-iv above using **botdefense.udf.f5.com** in the **Host** field
 
+          |lab011|
+
           .. note:: 
              *Ensure that both* **Hosts** *are listed in the* **Protected URIs** *section, as pictured above.*
 
@@ -284,8 +286,6 @@ the BD profile to the virtual server.
    |lab025|
 
 6. Review the information available on this page. Be sure to scroll down to see all graphs and data available.
-
-   |lab011|
 
 +---------------------------------------------------------------------------------------------------------------+
 | **End of Lab:**  This concludes the Lab.                                                                      |
